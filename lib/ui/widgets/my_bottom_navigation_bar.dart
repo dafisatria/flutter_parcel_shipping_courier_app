@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MyBottomNavigationBar extends StatefulWidget {
   const MyBottomNavigationBar({Key? key}) : super(key: key);
@@ -26,19 +27,19 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
             icon: _selectedIndex == 0
-                ? const Icon(Icons.send_outlined)
-                : const Icon(Icons.send_rounded),
+                ? SvgPicture.asset('assets/images/icon_my_parcels.svg')
+                : SvgPicture.asset('assets/images/icon_my_parcels_grey.svg'),
             label: 'My parcels'),
         BottomNavigationBarItem(
             icon: _selectedIndex == 1
-                ? const Icon(Icons.watch_later_outlined)
-                : const Icon(Icons.watch_later_rounded),
+                ? SvgPicture.asset('assets/images/icon_send_parcel.svg')
+                : SvgPicture.asset('assets/images/icon_send_parcel_grey.svg'),
             label: 'My parcels'),
         BottomNavigationBarItem(
             icon: _selectedIndex == 2
-                ? const Icon(Icons.account_balance_outlined)
-                : const Icon(Icons.account_balance_rounded),
-            label: 'My parcels'),
+                ? SvgPicture.asset('assets/images/icon_parcel_center.svg')
+                : SvgPicture.asset('assets/images/icon_parcel_center_grey.svg'),
+            label: 'Parcel center'),
       ],
       currentIndex: _selectedIndex,
       unselectedItemColor: Theme.of(context).unselectedWidgetColor,
