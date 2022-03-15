@@ -4,6 +4,12 @@
         android:label="flutter_parcel_shipping_courier_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        
+         <!-- TODO: Add your Google Maps API key here -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyA57WZBUm5oiaoHCoKnVvH0pZR6-m0_yu0"/>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
