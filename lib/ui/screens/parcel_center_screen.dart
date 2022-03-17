@@ -17,7 +17,7 @@ class _ParcelCenterScreenState extends State<ParcelCenterScreen> {
   Future<void> _onMapCreated(GoogleMapController controller) async {
     final googleOffices = await locations.getGoogleOffices();
     BitmapDescriptor customIcom = await BitmapDescriptor.fromAssetImage(
-        ImageConfiguration(
+        const ImageConfiguration(
           size: Size(24, 24),
         ),
         'assets/images/icon_marker.png');

@@ -29,11 +29,12 @@ class _SendParcelCheckoutScreenState extends State<SendParcelCheckoutScreen> {
               ),
               Container(
                 height: 207,
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 19),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 19),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: Colors.grey.shade200,
-                    image: DecorationImage(
+                    image: const DecorationImage(
                         fit: BoxFit.fill,
                         image: AssetImage(
                             'assets/images/img_card_background.png'))),
@@ -48,7 +49,7 @@ class _SendParcelCheckoutScreenState extends State<SendParcelCheckoutScreen> {
                           .headline2
                           ?.copyWith(color: Colors.white),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 60,
                     ),
                     Row(
@@ -83,10 +84,10 @@ class _SendParcelCheckoutScreenState extends State<SendParcelCheckoutScreen> {
 
   Widget _buildBottomSheet() {
     return Container(
-      padding: EdgeInsets.all(24),
+      padding: const EdgeInsets.all(24),
       height: MediaQuery.of(context).size.height * 0.5,
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(16),
             topLeft: Radius.circular(16),

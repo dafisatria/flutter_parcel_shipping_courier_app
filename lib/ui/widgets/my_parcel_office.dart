@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class MyParcelOffice extends StatefulWidget {
   const MyParcelOffice(
@@ -35,11 +34,11 @@ class _MyParcelOfficeState extends State<MyParcelOffice> {
             BoxShadow(
                 spreadRadius: 0,
                 blurRadius: 10,
-                offset: Offset(0, 0),
+                offset: const Offset(0, 0),
                 color: Theme.of(context).shadowColor)
           ]),
-      padding: EdgeInsets.all(16),
-      margin: EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
